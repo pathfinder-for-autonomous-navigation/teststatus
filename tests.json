@@ -1,4 +1,18 @@
 [
     "Teensy Unit Tests",
-    "How"
+    "HITL: EmptyCase",
+    "HITL: GomspaceCheckoutCase",
+    "HITL: DCDCCheckoutCase",
+    "HITL: ADCSCheckoutCase",
+    "HITL: DockingCheckoutCase",
+    "HITL: PropStateMachineCase",
+    "HITL: PiksiCheckoutCase",
+    "HITL: DeploymentToInitHoldCheckoutCase",
+    "HITL: GyroHeaterDiagCase",
+    "HOOTL: EmptySimCase",
+    "HOOTL: DeploymentToStandby",
+    "HOOTL: QuakeFaultHandler_Fast",
+    "HITL: EmptySimCase",
+    "HITL: DeploymentToStandby",
+    "HITL: QuakeFaultHandler_Fast"
 ]
