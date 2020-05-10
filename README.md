@@ -5,7 +5,13 @@ To run, activate a virtual environment, install the requirements, then run
 
     python main.py
 
-There will be a portal available at http://localhost:8080 . Try out the following endpoints:
+There will be a portal available at http://localhost:8080 .
+
+![](pre-change.png)
+![](change-dialog.png)
+![](post-change.png)
+
+Try out the following endpoints:
 
 - `/dummy` will instantiate the portal with dummy data
 - `/reset` resets the database
