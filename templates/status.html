@@ -27,7 +27,7 @@
         <tbody>
             {% for commit in data.commits %}
             <tr>
-                <td><a href = "https://github.com/pathfinder-for-autonomous-navigation/FlightSoftware/commit/{{commit}}" style = "font-family:'Courier New'">{{commit|truncate(11,False)}}
+                <td><a href = "https://github.com/pathfinder-for-autonomous-navigation/FlightSoftware/commit/{{commit}}" style = "font-family:'Courier New'">{{commit|truncate(8,end='')}}
 </a></td>
                 {% for test in data.tests %}
                 <td>
