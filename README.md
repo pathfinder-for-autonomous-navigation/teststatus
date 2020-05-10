@@ -7,9 +7,9 @@ To run, activate a virtual environment, install the requirements, then run
 
 There will be a portal available at http://localhost:8080 .
 
-![](pre-change.png)
-![](change-dialog.png)
-![](post-change.png)
+![](readme-images/pre-change.png)
+![](readme-images/change-dialog.png)
+![](readme-images/post-change.png)
 
 Try out the following endpoints:
 
