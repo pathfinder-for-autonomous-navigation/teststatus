@@ -15,4 +15,14 @@ Try out the following endpoints:
 
 - `/dummy` will instantiate the portal with dummy data
 - `/reset` resets the database
-- `/new-commit` uses the [Github Webhook format for pushes](https://developer.github.com/v3/activity/events/types/#pushevent). Expected format: application/json.
+- `/new-commit` uses the [Github Webhook format for pushes](https://developer.github.com/v3/activity/events/types/#pushevent). Expected format: application/json. Sample data looks like this:
+
+```
+{
+	"commits" : [
+		{
+			"sha": "deadbeef"
+		}	
+	]
+}
+```
