@@ -92,12 +92,14 @@ def new_commit():
     Endpoint used by Github webhook to add a new commit hash to the system.
     """
 
-    commits = [commit["sha"] for commit in request.json["commits"]]
+    if request.json["ref"] != "refs/heads/master": return "rejected"
+
+    commits = [commit["id"] for commit in request.json["commits"]]
     for commit in commits:
         for test in tests:
             db.session.add(TestData(commit=commit,test=test,status="Unknown",reporter="Github"))
     db.session.commit()
-    return ""
+    return "accepted"
 
 if __name__ == "__main__":
-    app.run(port=8080)
+    app.run(port=8000,ssl_context='adhoc')
