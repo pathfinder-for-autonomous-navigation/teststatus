@@ -5,7 +5,9 @@ To run, activate a virtual environment, install the requirements, then run
 
     python main.py
 
-There will be a portal available at http://163.172.142.70:2000
+There will then be a portal available at http://localhost:2000.
+
+Live demo: http://163.172.142.70:2000
 
 ![](readme-images/pre-change.png)
 ![](readme-images/change-dialog.png)
