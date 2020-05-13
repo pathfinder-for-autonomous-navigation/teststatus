@@ -3,7 +3,7 @@ Tracks status of PAN testing. Never again will we wonder where did HITLs break.
 
 To run, activate a virtual environment, install the requirements, then run
 
-    python main.py
+    gunicorn -w 3 -b 0.0.0.0:2000 main:app
 
 There will then be a portal available at http://localhost:2000.
 

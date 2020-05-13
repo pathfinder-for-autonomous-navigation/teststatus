@@ -100,6 +100,3 @@ def new_commit():
             db.session.add(TestData(commit=commit,test=test,status="Unknown",reporter="Github"))
     db.session.commit()
     return "accepted"
-
-if __name__ == "__main__":
-    app.run(port=8000,ssl_context='adhoc')
